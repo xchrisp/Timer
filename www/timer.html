@@ -1,0 +1,14 @@
+<body>
+<div id="kkk"></div>
+</body>
+<script language="javascript">
+var timer=0;
+ function testx()
+ {
+   timer=timer+1;
+     document.getElementById('kkk').innerHTML=timer;
+	 setTimeout(function(){testx();},100);
+ }
+
+	setTimeout(function(){testx();},100);
+</script>
